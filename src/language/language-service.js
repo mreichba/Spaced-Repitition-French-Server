@@ -28,6 +28,22 @@ const LanguageService = {
       )
       .where({ language_id })
   },
+  getLinkedList(words, headId) {
+    const LL = new LinkedList()
+
+    let nextId = headId
+
+    while (nextId !== null) {
+      for (let i = 0; i < words.length; i++) {
+        if (words[i].id === nextId) {
+          nextId = words[i].next
+          LL.insert(words[i])
+        }
+      }
+    }
+
+    return LL
+  },
 }
 
 module.exports = LanguageService
