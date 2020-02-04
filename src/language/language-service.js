@@ -59,7 +59,7 @@ const LanguageService = {
         'word.original',
         'word.translation',
         'word.correct_count',
-        'word.inccorect_count',
+        'word.incorrect_count',
         'language.total_score'
       )
       .first()
