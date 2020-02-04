@@ -87,11 +87,48 @@ languageRouter
         })
       }
 
-      res.send('implement me!')
-    })
-}
+      const LL = LanguageService.getLinkedList(words, req.language.head)
 
-const LL = LanguageService.getLinkedList(words, req.language.head)
+      const isCorrect = guess === LL.head.word.translation
+      const {
+        wordCorrectCount,
+        wordIncorrectCount,
+        answer
+      } = await LanguageService.updateLinkedList(LL, isCorrect)
 
+      const updatedTotalScore = isCorrect
+        ? req.language.total_score + 1
+        : req.language.total_score - 1 < 0
+          ? 0
+          : req.language.total_score - 1
+
+      await LanguageService.updateLanguageHead(
+        req.app.get('db'),
+        req.language.id,
+        LL.head.word.id,
+        updatedTotalScore
+      )
+
+      await LanguageService.updateLanguageWords(req.app.get('db'), LL)
+
+      const newHead = await LanguageService.getLanguageHead(
+        req.app.get('db'),
+        req.language.id
+      )
+
+      res.json({
+        nextWord: newHead.original,
+        totalScore: newHead.total_score,
+        wordCorrectCount,
+        wordIncorrectCount,
+        answer,
+        isCorrect
+      })
+
+      next()
+    } catch (error) {
+      next(error)
+    }
+  })
 
 module.exports = languageRouter
