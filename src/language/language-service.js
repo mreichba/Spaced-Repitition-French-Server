@@ -33,7 +33,7 @@ const LanguageService = {
 
   updateLanguageWords(db, list) {
     return db.transaction(async trx => {
-      let currentNode = list.headId
+      let currentNode = list.head
       
       while (currentNode !== null) {
         await trx
