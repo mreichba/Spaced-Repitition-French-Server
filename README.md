@@ -9,6 +9,7 @@ and update the total current score with each guess, correct guesses add 1 to the
 
 ## Technologies Used
 FRONT END - REACT | HTML | CSS | JAVASCRIPT | CYPRESS | API
+<br/>
 BACK END - NODE | EXPRESS | RESTFUL API | POSTGRESQL | AWS HEROKU DEPLOYMENT | MOCHA & CHAI TESTS
 
 ### Screenshots
