@@ -10,7 +10,7 @@ and update the total current score with each guess, correct guesses add 1 to the
 ## Technologies Used
 FRONT END - REACT | HTML | CSS | JAVASCRIPT | CYPRESS | API
 <br/>
-BACK END - NODE | EXPRESS | RESTFUL API | POSTGRESQL | AWS HEROKU DEPLOYMENT | MOCHA & CHAI TESTS
+BACK END - NODE | EXPRESS | RESTFUL API | POSTGRESQL | AWS HEROKU DEPLOYMENT | MOCHA & CHAI TESTS | JWT AUTH
 
 ### Screenshots
 ![spaced-rep-dashboard-page](https://github.com/thinkful-ei-iguana/mason-austin-spaced-client/blob/master/public/screenshots/Screen%20Shot%202020-02-05%20at%202.29.18%20PM.png)
