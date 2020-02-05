@@ -12,6 +12,9 @@
     "deploy": "git push heroku master"
   },
   "keywords": [],
+  "engines": {
+    "node": "13.2.0"
+  },
   "author": "Tom `tomatao` HT <tomht@thinkful.com>",
   "license": "MIT",
   "dependencies": {
