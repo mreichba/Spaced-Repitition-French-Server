@@ -11,6 +11,8 @@ and update the total current score with each guess, correct guesses add 1 to the
 FRONT END - REACT | HTML | CSS | JAVASCRIPT | CYPRESS | API
 <br/>
 BACK END - NODE | EXPRESS | RESTFUL API | POSTGRESQL | AWS HEROKU DEPLOYMENT | MOCHA & CHAI TESTS | JWT AUTH
+<br/>
+OTHER - ADOBE PHOTOSHOP | GIT | LIGHTHOUSE | DBEAVER | ZEIT | CLI
 
 ## Repo & Live Links
 [Live Server](https://mason-austin-learning.now.sh/)
