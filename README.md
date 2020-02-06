@@ -1,4 +1,4 @@
-# Spaced Repetition Capstone Mason & Austin
+# Spaced Repetition Capstone Mason Reichbauer & Austin Tumlinson
 
 ## About
 
@@ -11,6 +11,11 @@ and update the total current score with each guess, correct guesses add 1 to the
 FRONT END - REACT | HTML | CSS | JAVASCRIPT | CYPRESS | API
 <br/>
 BACK END - NODE | EXPRESS | RESTFUL API | POSTGRESQL | AWS HEROKU DEPLOYMENT | MOCHA & CHAI TESTS | JWT AUTH
+
+## Repo & Live Links
+[Live Server](https://mason-austin-learning.now.sh/)
+[Client Repo](https://github.com/thinkful-ei-iguana/mason-austin-spaced-client)
+[Server Repo](https://github.com/thinkful-ei-iguana/mason-austin-spaced-server)
 
 ### Screenshots
 ![spaced-rep-dashboard-page](https://github.com/thinkful-ei-iguana/mason-austin-spaced-client/blob/master/public/screenshots/Screen%20Shot%202020-02-05%20at%202.29.18%20PM.png)
