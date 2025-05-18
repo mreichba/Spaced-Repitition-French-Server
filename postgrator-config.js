@@ -9,7 +9,7 @@ module.exports = {
   // "username": process.env.MIGRATION_DB_USER,
   // "password": process.env.MIGRATION_DB_PASS,
   "ssl": !!process.env.SSL,
-  "connectionString": (process.env.NODE_ENV === 'production')
+  "connectionString": (process.env.NODE_ENV === 'test')
     ? process.env.TEST_DATABASE_URL
     : process.env.DATABASE_URL,
 }

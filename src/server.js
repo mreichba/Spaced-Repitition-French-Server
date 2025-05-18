@@ -16,7 +16,10 @@ const db = knex({
 
 app.set('db', db)
 
+app.get('/health', (req, res) => {
+  res.send('API is live!');
+});
+
 app.listen(PORT, () => {
   console.log(`Server listening at http://localhost:${PORT}`)
-  console.log(`Connecting to DB: ${DATABASE_URL}`)
 })
